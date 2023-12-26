@@ -1,0 +1,60 @@
+body {
+    background-color: white;
+}
+h1 {
+    font-family: verdana;
+    margin-top: 40px;
+    padding-left: 60px;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: verdana;
+    margin-left: 60px;
+    font-weight: 400;
+}
+
+p {
+    font-family: verdana;
+    font-size: 12px;
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-right: 40px;
+}
+h3 {
+    font-family: verdana;
+    margin-left: 60px;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+h4 {
+    font-family: verdana;
+    margin-left: 60px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+h5 {
+    font-family: verdana;
+    margin-left: 60px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+li{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    padding-right: 40px;
+}
+div {
+   list-style-type: none;
+   counter-reset: css-counter 0;
+}
+div h4 {
+    counter-increment: css-counter 1;
+}
+div h4:before {
+    content: counter(css-counter) ". "
+}
